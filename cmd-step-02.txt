@@ -1,1 +1,2 @@
 cd \temp
+iex ((gc .\DomainPasswordSpray.ps1) -join "`n")
