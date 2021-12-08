@@ -1,13 +1,13 @@
 whoami /all | out-file C:\temp\whoami.txt
 
-net user /domain > c:\temp\users.txt
-net group /domain > c:\temp\groups.txt
+net user /domain > C:\temp\users-net.txt
+net group /domain > C:\temp\groups-net.txt
 
-dsget group "CN=g_CS,OU=Groups,OU=!CT-2021,DC=$($env:USERDOMAIN),DC=local" -members > c:\temp\dsget-groups-g_cs.txt
-dsget group "CN=g_SA,OU=Groups,OU=!CT-2021,DC=$($env:USERDOMAIN),DC=local" -members > c:\temp\dsget-groups-g_sa.txt
-dsget group "CN=Domain Admins,CN=Users,DC=$($env:USERDOMAIN),DC=local" -members > c:\temp\dsget-groups-g_da.txt
+dsget group "CN=g_CS,OU=Groups,OU=!CT-2021,DC=$($env:USERDOMAIN),DC=local" -members > C:\temp\dsget-groups-g_cs.txt
+dsget group "CN=g_SA,OU=Groups,OU=!CT-2021,DC=$($env:USERDOMAIN),DC=local" -members > C:\temp\dsget-groups-g_sa.txt
+dsget group "CN=Domain Admins,CN=Users,DC=$($env:USERDOMAIN),DC=local" -members > C:\temp\dsget-groups-g_da.txt
 
-dsquery user -o samid > users.txt
+dsquery user -o samid > C:\Temp\users.txt
 
-dir env: > c:\temp\env.txt
+dir env: > C:\temp\env.txt
 
