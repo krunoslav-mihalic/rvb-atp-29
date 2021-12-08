@@ -7,5 +7,7 @@ dsget group "CN=g_CS,OU=Groups,OU=!CT-2021,DC=$($env:USERDOMAIN),DC=local" -memb
 dsget group "CN=g_SA,OU=Groups,OU=!CT-2021,DC=$($env:USERDOMAIN),DC=local" -members > c:\temp\dsget-groups-g_sa.txt
 dsget group "CN=Domain Admins,CN=Users,DC=$($env:USERDOMAIN),DC=local" -members > c:\temp\dsget-groups-g_da.txt
 
+dsquery user -o samid > users.txt
+
 dir env: > c:\temp\env.txt
 
