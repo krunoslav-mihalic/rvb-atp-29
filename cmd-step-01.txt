@@ -1,0 +1,11 @@
+whoami /all | out-file C:\temp\whoami.txt
+
+net user /domain > c:\temp\users.txt
+net group /domain > c:\temp\groups.txt
+
+dsget group "CN=g_CS,OU=Groups,OU=!CT-2021,DC=$($env:USERDOMAIN),DC=local" -members > c:\temp\dsget-groups-g_cs.txt
+dsget group "CN=g_SA,OU=Groups,OU=!CT-2021,DC=$($env:USERDOMAIN),DC=local" -members > c:\temp\dsget-groups-g_sa.txt
+dsget group "CN=Domain Admins,CN=Users,DC=$($env:USERDOMAIN),DC=local" -members > c:\temp\dsget-groups-g_da.txt
+
+dir env: > c:\temp\env.txt
+
