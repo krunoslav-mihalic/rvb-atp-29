@@ -1,0 +1,56 @@
+[
+  {
+    "Time1": "2022-05-16T08:45:08.487Z",
+    "Distance": 770,
+    "TimeDeltaInHours": 0.029,
+    "Travel": "Hassfurt -> Mokotow",
+    "UserPrincipalName": "user02@b2crvbaadonline.onmicrosoft.com",
+    "Time2": "2022-05-16T08:43:22.324Z",
+    "TravelSpeed": 26111
+  },
+  {
+    "Time1": "2022-05-16T08:43:22.324Z",
+    "Distance": 7259,
+    "TimeDeltaInHours": 0.025,
+    "Travel": "Mokotow -> Washington",
+    "UserPrincipalName": "user02@b2crvbaadonline.onmicrosoft.com",
+    "Time2": "2022-05-16T08:41:53.122Z",
+    "TravelSpeed": 292958
+  },
+  {
+    "Time1": "2022-05-16T08:41:53.122Z",
+    "Distance": 6771,
+    "TimeDeltaInHours": 0.012,
+    "Travel": "Washington -> Schoenwalde-Glien",
+    "UserPrincipalName": "user02@b2crvbaadonline.onmicrosoft.com",
+    "Time2": "2022-05-16T08:41:09.245Z",
+    "TravelSpeed": 555544
+  },
+  {
+    "Time1": "2022-05-16T08:40:51.198Z",
+    "Distance": 1021,
+    "TimeDeltaInHours": 0.015,
+    "Travel": "Schoenwalde-Glien -> Beograd",
+    "UserPrincipalName": "user02@b2crvbaadonline.onmicrosoft.com",
+    "Time2": "2022-05-16T08:39:56.744Z",
+    "TravelSpeed": 67499
+  },
+  {
+    "Time1": "2022-05-16T12:01:48.45Z",
+    "Distance": 9237,
+    "TimeDeltaInHours": 0.015,
+    "Travel": "Palo Alto -> Karlsruhe",
+    "UserPrincipalName": "user02@b2crvbaadonline.onmicrosoft.com",
+    "Time2": "2022-05-16T12:00:54.563Z",
+    "TravelSpeed": 617091
+  },
+  {
+    "Time1": "2022-05-16T12:00:54.563Z",
+    "Distance": 102,
+    "TimeDeltaInHours": 0.013,
+    "Travel": "Karlsruhe -> Saarbruecken",
+    "UserPrincipalName": "user02@b2crvbaadonline.onmicrosoft.com",
+    "Time2": "2022-05-16T12:00:07.292Z",
+    "TravelSpeed": 7768
+  }
+]
